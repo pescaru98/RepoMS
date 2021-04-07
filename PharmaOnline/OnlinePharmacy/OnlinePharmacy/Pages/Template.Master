@@ -1,0 +1,107 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Template.master.cs" Inherits="OnlinePharmacy.Pages.Template" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        footer li {
+            border-bottom: 2px solid white;
+            margin-bottom: 10px;
+        }
+
+        span, a.nav-link {
+            color: white !important;
+        }
+
+            a.nav-link:hover {
+                color: #d5d5d5 !important;
+            }
+    </style>
+</head>
+<body style="background: #d8d8d8;">
+    <form id="form1" runat="server">
+        <div>
+
+
+
+            <nav class="navbar navbar-expand-sm bg-primary navbar-primary">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Pages/Dashboard.aspx">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Pages/BuySell.aspx">Buy&Sell Gitcoin</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav  ml-auto">
+                    <li class="nav-item " style="align-self: center;">
+                        <asp:Label runat="server" CssClass="nav-link mr-5 p-3" ID="balance" />
+                    </li>
+                    <li class="nav-item " style="align-self: center;">
+                        <asp:Label runat="server" CssClass="nav-link mr-5 p-3" ID="coins" />
+                    </li>
+                    <li class="nav-item ">
+                        <asp:Label runat="server" CssClass="nav-link mr-5" ID="loggedUserLabel" />
+                    </li>
+                    <li class="nav-item ">
+                        <asp:LinkButton runat="server" CssClass="nav-link" OnClick="Unnamed1_Click">Logout</asp:LinkButton>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <footer style="position:fixed;bottom:5px; left:50px;opacity:0.8;">@ 2021 - CryptoTrading.com</footer>
+        <!-- <footer class="bg-primary pt-2" style="position: absolute; bottom: 0px; font-size: 16px; width: 100%; text-align: -webkit-center; color: white;">
+            <div class="row">
+                <div class="col-4">
+                    <ul style="list-style: none;">
+                        <li>
+                            <div>Terms & Conditions</div>
+                        </li>
+                        <li>
+                            <div>Policy & Confidentiality</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul style="list-style: none;">
+                        <li>
+                            <div>General</div>
+                        </li>
+                        <li>
+                            <div>Cookies</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul style="list-style: none;">
+                        <li>
+                            <div>About</div>
+                        </li>
+                        <li>
+                            <div>Contact us</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer> -->
+
+
+    </form>
+
+
+
+</body>
+</html>

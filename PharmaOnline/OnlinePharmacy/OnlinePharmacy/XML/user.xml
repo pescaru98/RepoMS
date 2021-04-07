@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfUser xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <User>
+    <user_id>6b6e2909-b696-443e-bee2-39c4c9dc6d71</user_id>
+    <username>pes</username>
+    <password>1234</password>
+    <role>REGULAR</role>
+    <coins>314.31674958540628</coins>
+    <balance>6215.38</balance>
+  </User>
+  <User>
+    <user_id>f80db446-a3c9-4531-9893-eb5beebb5b5d</user_id>
+    <username>pescaru98</username>
+    <password>12345</password>
+    <role>REGULAR</role>
+    <coins>0</coins>
+    <balance>0</balance>
+  </User>
+  <User>
+    <user_id>eb3a6eb7-c95b-4b9f-9737-f75c3366577b</user_id>
+    <username>admin</username>
+    <password>12345</password>
+    <role>ADMIN</role>
+    <coins>999999999999</coins>
+    <balance>9999999999999</balance>
+  </User>
+</ArrayOfUser>
