@@ -200,4 +200,34 @@
     <price>16.330000000000002</price>
     <record_date>2021-04-07T23:40:51.3216397+03:00</record_date>
   </GitCoinRecord>
+  <GitCoinRecord>
+    <record_id>3bae8a7e-21b4-47e7-bd4c-d21b3b98845d</record_id>
+    <price>16.080000000000002</price>
+    <record_date>2021-04-08T00:18:06.4291161+03:00</record_date>
+  </GitCoinRecord>
+  <GitCoinRecord>
+    <record_id>a8224fd5-bf2f-4ad6-b0ca-ad12bee3c66f</record_id>
+    <price>15.830000000000002</price>
+    <record_date>2021-04-08T00:18:14.3861447+03:00</record_date>
+  </GitCoinRecord>
+  <GitCoinRecord>
+    <record_id>72fcf21f-bc62-4ea0-90a2-bf81dddb2bc4</record_id>
+    <price>18.330000000000002</price>
+    <record_date>2021-04-08T00:37:47.4301268+03:00</record_date>
+  </GitCoinRecord>
+  <GitCoinRecord>
+    <record_id>0f81cf13-eb0d-491a-8d4a-cdfa2b12854b</record_id>
+    <price>18.580000000000002</price>
+    <record_date>2021-04-08T00:38:21.8663583+03:00</record_date>
+  </GitCoinRecord>
+  <GitCoinRecord>
+    <record_id>1f33ff2c-3735-4993-8566-e6fd76ea5eb7</record_id>
+    <price>16.080000000000002</price>
+    <record_date>2021-04-08T00:38:46.1053415+03:00</record_date>
+  </GitCoinRecord>
+  <GitCoinRecord>
+    <record_id>c6795fc4-3195-4b3f-8a84-c12e7b8ec8ba</record_id>
+    <price>18.580000000000002</price>
+    <record_date>2021-04-08T00:40:15.73202+03:00</record_date>
+  </GitCoinRecord>
 </ArrayOfGitCoinRecord>

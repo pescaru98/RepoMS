@@ -120,4 +120,52 @@
     <coins>22</coins>
     <coin_price>16.220000000000002</coin_price>
   </Transaction>
+  <Transaction>
+    <transaction_id>4413cda6-a1af-4a81-b455-d699f2f71b2a</transaction_id>
+    <buyer_id>eb3a6eb7-c95b-4b9f-9737-f75c3366577b</buyer_id>
+    <seller_id>6b6e2909-b696-443e-bee2-39c4c9dc6d71</seller_id>
+    <issue_date>2021-04-08T00:18:06.4291161+03:00</issue_date>
+    <coins>50</coins>
+    <coin_price>16.330000000000002</coin_price>
+  </Transaction>
+  <Transaction>
+    <transaction_id>389d6322-d279-426f-8b85-dead134c12f5</transaction_id>
+    <buyer_id>eb3a6eb7-c95b-4b9f-9737-f75c3366577b</buyer_id>
+    <seller_id>6b6e2909-b696-443e-bee2-39c4c9dc6d71</seller_id>
+    <issue_date>2021-04-08T00:18:14.3861447+03:00</issue_date>
+    <coins>50</coins>
+    <coin_price>16.080000000000002</coin_price>
+  </Transaction>
+  <Transaction>
+    <transaction_id>0c922da1-cb15-4b6a-9446-9902a6550225</transaction_id>
+    <buyer_id>6b6e2909-b696-443e-bee2-39c4c9dc6d71</buyer_id>
+    <seller_id>eb3a6eb7-c95b-4b9f-9737-f75c3366577b</seller_id>
+    <issue_date>2021-04-08T00:37:47.4301268+03:00</issue_date>
+    <coins>500</coins>
+    <coin_price>15.830000000000002</coin_price>
+  </Transaction>
+  <Transaction>
+    <transaction_id>ae8462d5-ba80-4800-bede-56b6e9304ff9</transaction_id>
+    <buyer_id>6b6e2909-b696-443e-bee2-39c4c9dc6d71</buyer_id>
+    <seller_id>eb3a6eb7-c95b-4b9f-9737-f75c3366577b</seller_id>
+    <issue_date>2021-04-08T00:38:21.8663583+03:00</issue_date>
+    <coins>50</coins>
+    <coin_price>18.330000000000002</coin_price>
+  </Transaction>
+  <Transaction>
+    <transaction_id>b343b971-5099-4382-9736-7dc449dc0fbd</transaction_id>
+    <buyer_id>eb3a6eb7-c95b-4b9f-9737-f75c3366577b</buyer_id>
+    <seller_id>6b6e2909-b696-443e-bee2-39c4c9dc6d71</seller_id>
+    <issue_date>2021-04-08T00:38:46.1053415+03:00</issue_date>
+    <coins>500</coins>
+    <coin_price>18.580000000000002</coin_price>
+  </Transaction>
+  <Transaction>
+    <transaction_id>e982a5ec-5b15-4c9f-9fe6-4f5b19b2f5a6</transaction_id>
+    <buyer_id>6b6e2909-b696-443e-bee2-39c4c9dc6d71</buyer_id>
+    <seller_id>eb3a6eb7-c95b-4b9f-9737-f75c3366577b</seller_id>
+    <issue_date>2021-04-08T00:40:15.73202+03:00</issue_date>
+    <coins>500</coins>
+    <coin_price>16.080000000000002</coin_price>
+  </Transaction>
 </ArrayOfTransaction>

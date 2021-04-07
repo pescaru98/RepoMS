@@ -5,8 +5,8 @@
     <username>pes</username>
     <password>1234</password>
     <role>REGULAR</role>
-    <coins>314.31674958540628</coins>
-    <balance>6215.38</balance>
+    <coins>764.31674958540634</coins>
+    <balance>1696.8799999999974</balance>
   </User>
   <User>
     <user_id>f80db446-a3c9-4531-9893-eb5beebb5b5d</user_id>
@@ -23,5 +23,13 @@
     <role>ADMIN</role>
     <coins>999999999999</coins>
     <balance>9999999999999</balance>
+  </User>
+  <User>
+    <user_id>c74449b3-48a7-4c7e-8276-79d9ed949b81</user_id>
+    <username>NewUser</username>
+    <password>5555</password>
+    <role>REGULAR</role>
+    <coins>0</coins>
+    <balance>0</balance>
   </User>
 </ArrayOfUser>

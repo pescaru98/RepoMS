@@ -153,6 +153,7 @@
     <Content Include="Pages\ErrorPage.aspx" />
     <Content Include="Pages\Login.aspx" />
     <Content Include="Pages\Register.aspx" />
+    <Content Include="Pages\Transaction.aspx" />
     <Content Include="Web.config" />
     <Content Include="XML\gitcoinrecord.xml" />
     <Content Include="XML\offer.xml" />
@@ -160,6 +161,13 @@
     <Content Include="XML\user.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\Transaction.aspx.cs">
+      <DependentUpon>Transaction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Transaction.aspx.designer.cs">
+      <DependentUpon>Transaction.aspx</DependentUpon>
+    </Compile>
     <Compile Include="XMLModels\Currency.cs" />
     <Compile Include="XMLModels\GitCoinRecord.cs" />
     <Compile Include="XMLModels\Offer.cs" />

@@ -44,7 +44,7 @@ namespace OnlinePharmacy.Pages
             DateTime now = DateTime.Now;
             if (Convert.ToDouble(sellGit.Text) <= Convert.ToDouble(Session["coins"]))
             {
-                Transaction transaction = new Transaction(Guid.NewGuid(), Guid.Parse("eb3a6eb7-c95b-4b9f-9737-f75c3366577b"), Guid.Parse(Session["user_id"].ToString()), now, Convert.ToDouble(sellGit.Text) , coin_value);
+                OnlinePharmacy.Models.Transaction transaction = new OnlinePharmacy.Models.Transaction(Guid.NewGuid(), Guid.Parse("eb3a6eb7-c95b-4b9f-9737-f75c3366577b"), Guid.Parse(Session["user_id"].ToString()), now, Convert.ToDouble(sellGit.Text) , coin_value);
                 transactionService.create(transaction);
                 double next_coin_value = gitCoinService.calculateNextCoinValue(Convert.ToDouble(sellGit.Text), coin_value, 1);
                 gitCoinService.create(new GitCoinRecord(Guid.NewGuid(), next_coin_value, now));
@@ -74,7 +74,7 @@ namespace OnlinePharmacy.Pages
 
             if (coins_in_dollars <= Convert.ToDouble(Session["balance"]))
             {
-                Transaction transaction = new Transaction(Guid.NewGuid(),  Guid.Parse(Session["user_id"].ToString()), Guid.Parse("eb3a6eb7-c95b-4b9f-9737-f75c3366577b"), now, Convert.ToDouble(buyGit.Text), coin_value);
+                OnlinePharmacy.Models.Transaction transaction = new OnlinePharmacy.Models.Transaction(Guid.NewGuid(),  Guid.Parse(Session["user_id"].ToString()), Guid.Parse("eb3a6eb7-c95b-4b9f-9737-f75c3366577b"), now, Convert.ToDouble(buyGit.Text), coin_value);
                 transactionService.create(transaction);
 
                 double next_coin_value = gitCoinService.calculateNextCoinValue(Convert.ToDouble(buyGit.Text), coin_value, 2);

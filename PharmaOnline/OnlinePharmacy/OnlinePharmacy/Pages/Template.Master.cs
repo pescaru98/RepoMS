@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OnlinePharmacy.XMLServices;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,6 +10,7 @@ namespace OnlinePharmacy.Pages
 {
     public partial class Template : System.Web.UI.MasterPage
     {
+        UserService userService = new UserService();
         protected void Page_Load(object sender, EventArgs e)
         {
             
@@ -29,6 +31,15 @@ namespace OnlinePharmacy.Pages
             Session["balance"] = null;
             Session.Clear();
             Response.Redirect("Login.aspx");
+        }
+
+        protected void ButtonAddBalance_Click(object sender, EventArgs e)
+        {
+            double newBalance = Convert.ToDouble(Session["balance"]) + Convert.ToDouble(balanceAdd.Text);
+            Session["balance"] = newBalance;
+            userService.updateCoinsAndBalanceOfUserId(Guid.Parse(Session["user_id"].ToString()), Convert.ToDouble(Session["coins"]), newBalance);
+            balanceAdd.Text = "";
+            Response.Redirect(Request.RawUrl);
         }
     }
 }

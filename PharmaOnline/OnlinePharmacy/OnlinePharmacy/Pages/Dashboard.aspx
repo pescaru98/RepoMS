@@ -40,7 +40,7 @@
         setInterval(function () {
 
             gitcoinrecordsObj = getXMLObj(xml);
-            console.log(gitcoinrecordsObj);
+            //console.log(gitcoinrecordsObj);
             gcrDiff = getArrayDiff(gitcoinrecordsObjCopy, gitcoinrecordsObj);
             //gitcoinrecordsObj = getLatestN(10, gitcoinrecordsObj);
 

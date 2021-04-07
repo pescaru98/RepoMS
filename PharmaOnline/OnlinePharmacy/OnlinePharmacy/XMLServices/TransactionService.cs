@@ -70,5 +70,24 @@ namespace OnlinePharmacy.XMLServices
                 reader.Close();
             }
         }
+
+        public List<Transaction> getTransactionsOfUserId(Guid userId)
+        {
+            try
+            {
+                List<Transaction> transactions = getAll();
+                if (transactions == null || transactions.Count == 0)
+                    return null;
+
+                List<Transaction> myTransactions = transactions.FindAll(item => item.buyer_id.Equals(userId) || item.seller_id.Equals(userId)).ToList();
+
+                return myTransactions;
+            }
+            catch(Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine(e.Message);
+                return null;
+            }
+        }
     }
 }
