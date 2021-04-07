@@ -35,11 +35,14 @@ namespace OnlinePharmacy.Pages
 
         protected void ButtonAddBalance_Click(object sender, EventArgs e)
         {
-            double newBalance = Convert.ToDouble(Session["balance"]) + Convert.ToDouble(balanceAdd.Text);
-            Session["balance"] = newBalance;
-            userService.updateCoinsAndBalanceOfUserId(Guid.Parse(Session["user_id"].ToString()), Convert.ToDouble(Session["coins"]), newBalance);
-            balanceAdd.Text = "";
-            Response.Redirect(Request.RawUrl);
+            if (balanceAdd.Text != null && balanceAdd.Text != "")
+            {
+                double newBalance = Convert.ToDouble(Session["balance"]) + Convert.ToDouble(balanceAdd.Text);
+                Session["balance"] = newBalance;
+                userService.updateCoinsAndBalanceOfUserId(Guid.Parse(Session["user_id"].ToString()), Convert.ToDouble(Session["coins"]), newBalance);
+                balanceAdd.Text = "";
+                Response.Redirect(Request.RawUrl);
+            }
         }
     }
 }

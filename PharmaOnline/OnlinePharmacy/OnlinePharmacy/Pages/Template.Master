@@ -86,7 +86,7 @@
                             <div class="form-group" style="text-align: -webkit-center;">
 
                                 <asp:TextBox type="number" placeholder="Amount" runat="server" ID="balanceAdd" CssClass="form-control col-10" Width="254px"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" CssClass="redClr" ControlToValidate="balanceAdd" ErrorMessage="Please enter a value" ForeColor="Red"></asp:RequiredFieldValidator>
+                              
                             </div>
                         </div>
 
