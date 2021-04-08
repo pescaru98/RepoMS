@@ -22,10 +22,10 @@ function getDataOfArray(array) {
 }
 
 function compareByDateObj(objA, objB) {
-    if (objA.issue_date < objB.issue_date) {
+    if (new Date(objA.issue_date) < new Date(objB.issue_date)) {
         return -1;
     }
-    if (objA.issue_date > objB.issue_date) {
+    if (new Date(objA.issue_date) > new Date(objB.issue_date)) {
         return 1;
     }
     return 0;

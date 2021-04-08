@@ -22,10 +22,10 @@ function getHourFromDate(date) {
 }
 
 function compareByDate(a, b) {
-    if (a < b) {
+    if (new Date(a) < new Date(b)) {
         return -1;
     }
-    if (a > b) {
+    if (new Date(a) > new Date(b)) {
         return 1;
     }
     return 0;

@@ -5,16 +5,16 @@
     <username>pes</username>
     <password>1234</password>
     <role>REGULAR</role>
-    <coins>764.31674958540634</coins>
-    <balance>1740.8799999999974</balance>
+    <coins>539.31674958540634</coins>
+    <balance>3649.6268549999968</balance>
   </User>
   <User>
     <user_id>f80db446-a3c9-4531-9893-eb5beebb5b5d</user_id>
     <username>pescaru98</username>
     <password>12345</password>
     <role>REGULAR</role>
-    <coins>0</coins>
-    <balance>0</balance>
+    <coins>78.552759999999992</coins>
+    <balance>4156.5406378735124</balance>
   </User>
   <User>
     <user_id>eb3a6eb7-c95b-4b9f-9737-f75c3366577b</user_id>
@@ -31,5 +31,13 @@
     <role>REGULAR</role>
     <coins>0</coins>
     <balance>0</balance>
+  </User>
+  <User>
+    <user_id>01bb3bab-44e2-451c-bdec-1309f490820c</user_id>
+    <username>newme</username>
+    <password>1234</password>
+    <role>REGULAR</role>
+    <coins>12550</coins>
+    <balance>18185585.564310003</balance>
   </User>
 </ArrayOfUser>
